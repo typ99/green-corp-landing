@@ -32,12 +32,12 @@ button {
     cursor: pointer;
     box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
     padding: 15px;
-    transition: background-color 0.3s ease-in;
 }
 
 button:hover {
     background-color: #f6980c;
     box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
+    transition: background-color 0.3s ease-in;
 }
 
 .header__logo {
@@ -104,17 +104,22 @@ button:hover {
 .form label {
     font-size: 18px;
     font-weight: 600;
-    margin: 15px 0;
+    margin: 20px 0;
+}
+
+.form label:first-child {
+    margin-top: 0;
 }
 
 .form input,
-select {
+.form select {
     height: 60px;
     padding: 0 20px;
     font-size: 18px;
     color: #213053;
     border-radius: 15px;
     border: none;
+    outline: none;
 }
 
 .form h1 {
@@ -151,10 +156,6 @@ select {
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 90px 20px;
     font-size: 16px;
     font-weight: 600;
@@ -162,6 +163,7 @@ footer {
 
 .footer__container {
     display: flex;
+    justify-content: center;
 }
 
 .footer__group {
